@@ -1,0 +1,135 @@
+@media (min-width: 1025px) {
+  .menu-mobile {
+    display: none;
+  }
+  .menu {
+    margin: 0 auto;
+  }
+  .menu-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 50px;
+    padding-top: 30px;
+  }
+  .menu-nav--done {
+    background: none;
+  }
+  .menu-nav__ul {
+    margin: 0 auto;
+  }
+  .menu-nav__list {
+    display: inline;
+    padding-right: 30px;
+    font-size: 22px;
+    color: red;
+  }
+  .menu-nav__router {
+    text-decoration: none;
+    color: #fff;
+    background-color: #81615075;
+    padding: 25px;
+  }
+  .menu-nav__router.active {
+    background-color: #81615075;
+    text-decoration: none;
+    color: #fff;
+    padding: 25px;
+    border-bottom: 2px solid #222;
+  }
+  .menu-nav__router:active:hover {
+    background: #09090975;
+  }
+  .fa-bars {
+    color: #00B4CC;
+    font-size: 26px;
+    padding-left: 10px;
+  }
+}
+
+@media (max-width: 1025px) {
+  .nav {
+    padding: 0;
+  }
+  .menu-nav {
+    display: none;
+  }
+  .menu-mobile {
+    display: block;
+    margin: auto;
+  }
+  ul {
+    list-style: none;
+  }
+  .nav li {
+    font-size: 20px;
+  }
+  .nav li a {
+    background-color: #000000;
+    color: #fff;
+    text-decoracion: none;
+    padding: 20px 20px;
+    margin-left: 11px;
+    width: 578px;
+    display: block;
+  }
+  .nav li a:hover {
+    background-color: #434343;
+  }
+  .nav > li {
+    float: left;
+  }
+  .nav li:hover > ul {
+    display: block;
+  }
+  .nav li ul {
+    display: none;
+    position: absolute;
+    min-width: 140px;
+  }
+}
+
+.fa-bars {
+  color: #00B4CC;
+  font-size: 44px;
+  padding-left: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .nav {
+    padding: 0;
+  }
+  .menu-nav {
+    display: none;
+  }
+  .menu-mobile {
+    display: block;
+    margin: auto;
+  }
+  ul {
+    list-style: none;
+  }
+  .nav li a {
+    background-color: #000000;
+    color: #fff;
+    text-decoracion: none;
+    padding: 10px 15px;
+    width: 500px;
+    display: block;
+  }
+  .nav li a:hover {
+    background-color: #434343;
+  }
+  .nav > li {
+    float: left;
+  }
+  .nav li:hover > ul {
+    display: block;
+  }
+  .nav li ul {
+    display: none;
+    position: absolute;
+    min-width: 140px;
+  }
+}
+/*# sourceMappingURL=menu.component.css.map */

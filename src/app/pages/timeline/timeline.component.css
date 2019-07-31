@@ -1,0 +1,307 @@
+@media (min-width: 1025px) {
+  .container-character__img {
+    width: 100%;
+  }
+  .timeline {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+    margin: 0 auto;
+  }
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: #00c0ff;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  .timeline-container {
+    position: relative;
+  }
+  .timeline-container__content {
+    padding: 20px 50px;
+    position: relative;
+    border-radius: 6px;
+    margin-left: 50px;
+  }
+  .timeline-container__content::before {
+    color: #FFF;
+    position: absolute;
+    left: 0;
+    top: 30%;
+    font-size: 70px;
+  }
+  .image {
+    border: 5px solid #FFF;
+    width: 150px;
+  }
+  .text {
+    margin-top: 10px;
+    padding: 5px 20px;
+    background-color: #005c7a;
+    border-radius: 5px;
+  }
+  .timeline:nth-child(even) .timeline-container__content {
+    width: 300px;
+    margin-left: -359px;
+  }
+  .timeline:nth-child(even) .timeline-container__content .fa-caret-left {
+    right: 34px;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  .timeline:nth-child(odd) .timeline-container__content {
+    margin-left: 351px;
+    width: 300px;
+  }
+  .name {
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+  .cont {
+    color: #fff;
+    text-align: center;
+    font-size: 33px;
+    margin: 10px;
+  }
+  .fa-caret-left {
+    position: absolute;
+    left: 33px;
+    bottom: 50px;
+    font-size: 50px;
+    color: #005c7a;
+  }
+  .prueba {
+    -webkit-clip-path: circle(50% at 50% 50%);
+            clip-path: circle(50% at 50% 50%);
+    width: 150px;
+    height: 150px;
+    margin: 15px auto;
+  }
+  .button {
+    background: #005c7a;
+    padding: 13px;
+    font-size: 15px;
+    border: 1px solid #005c7a;
+    border-radius: 7px;
+    color: #fff;
+    margin-left: 384px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    font-family: 'KELMSCOT';
+  }
+}
+
+@media (max-width: 1025px) {
+  .container-character__img {
+    width: 100%;
+  }
+  .timeline {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+    margin: 0 auto;
+  }
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: #00c0ff;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  .timeline-container {
+    position: relative;
+  }
+  .timeline-container__content {
+    padding: 20px 50px;
+    position: relative;
+    border-radius: 6px;
+    margin-left: 50px;
+  }
+  .timeline-container__content::before {
+    color: #FFF;
+    position: absolute;
+    left: 0;
+    top: 30%;
+    font-size: 70px;
+  }
+  .image {
+    border: 5px solid #FFF;
+    width: 150px;
+  }
+  .text {
+    margin-top: 10px;
+    padding: 5px 20px;
+    background-color: #005c7a;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+  .cont {
+    color: #fff;
+    text-align: center;
+    font-size: 33px;
+    margin: 10px;
+  }
+  .fa-caret-left {
+    position: absolute;
+    left: 33px;
+    bottom: 50px;
+    font-size: 50px;
+    color: #005c7a;
+  }
+  .prueba {
+    -webkit-clip-path: circle(50% at 50% 50%);
+            clip-path: circle(50% at 50% 50%);
+    width: 150px;
+    height: 150px;
+    margin: 15px auto;
+  }
+  .timeline:nth-child(even) .timeline-container__content {
+    width: 300px;
+    margin-left: -359px;
+  }
+  .timeline:nth-child(even) .timeline-container__content .fa-caret-left {
+    left: 346px;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  .timeline:nth-child(odd) .timeline-container__content {
+    margin-left: 351px;
+    width: 300px;
+  }
+  .button {
+    background: #005c7a;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #005c7a;
+    border-radius: 7px;
+    color: #fff;
+    margin-bottom: 40px;
+    margin-top: 60px;
+    font-family: "KELMSCOT";
+    margin-left: -23px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container-character__img {
+    width: 100%;
+  }
+  .timeline {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+    margin: 0 auto;
+  }
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: #00c0ff;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  .timeline-container {
+    position: relative;
+  }
+  .timeline-container__content {
+    padding: 20px 50px;
+    position: relative;
+    border-radius: 6px;
+    margin-left: 50px;
+  }
+  .timeline-container__content::before {
+    color: #FFF;
+    position: absolute;
+    left: 0;
+    top: 30%;
+    font-size: 70px;
+  }
+  .image {
+    border: 5px solid #FFF;
+    width: 150px;
+  }
+  .text {
+    margin-top: 10px;
+    padding: 5px 20px;
+    background-color: #005c7a;
+    border-radius: 5px;
+  }
+  .timeline:nth-child(even) .timeline-container__content {
+    width: 140px;
+    margin-left: -190px;
+  }
+  .timeline:nth-child(even) .timeline-container__content .fa-caret-left {
+    left: 186px;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  .timeline:nth-child(odd) .timeline-container__content {
+    margin-left: 185px;
+    width: 140px;
+  }
+  .name {
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  .cont {
+    color: #fff;
+    text-align: center;
+    font-size: 33px;
+    margin: 10px;
+  }
+  .fa-caret-left {
+    position: absolute;
+    left: 33px;
+    bottom: 50px;
+    font-size: 50px;
+    color: #005c7a;
+  }
+  .prueba {
+    -webkit-clip-path: circle(50% at 50% 50%);
+            clip-path: circle(50% at 50% 50%);
+    width: 100px;
+    height: 100px;
+    margin: 15px auto;
+  }
+  .button {
+    background: #005c7a;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #005c7a;
+    border-radius: 7px;
+    color: #fff;
+    margin-bottom: 40px;
+    margin-top: 60px;
+    font-family: "KELMSCOT";
+    margin-left: -23px;
+  }
+}
+/*# sourceMappingURL=timeline.component.css.map */

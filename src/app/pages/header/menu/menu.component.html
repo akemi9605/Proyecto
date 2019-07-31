@@ -1,0 +1,37 @@
+<header>
+      <div class="menu-mobile">
+
+            <ul class="nav">
+
+                  <li (click)="open()"><i class="fas fa-bars"></i></li>
+
+                  <ul *ngIf="opened">
+                        <li><a routerLink="/home" routerLinkActive="active" class="menu-nav__router"><i
+                                          class="fas fa-home"></i> Home</a></li>
+                        <li><a routerLink="/characters" routerLinkActive="active" class="menu-nav__router"><i
+                                          class="fas fa-user-alt"></i> Characters</a></li>
+                        <li><a routerLink="/houses" routerLinkActive="active" class="menu-nav__router"><i
+                                          class="fab fa-fort-awesome"></i> Houses</a></li>
+                        <li><a routerLink="/timeline" routerLinkActive="active" class="menu-nav__router"><i
+                                          class="fas fa-birthday-cake"></i> Timeline</a></li>
+                  </ul>
+            </ul>
+
+      </div>
+      <nav class="menu">
+            <div class="menu-nav" [ngClass]="{'menu-nav--done': colorDiferent == true}">
+                  <ul class="menu-nav__ul">
+                        <li class="menu-nav__list"><a routerLink="/home" routerLinkActive="active"
+                                    class="menu-nav__router"><i class="fas fa-home"></i> Home</a></li>
+                        <li class="menu-nav__list"><a routerLink="/characters" routerLinkActive="active"
+                                    class="menu-nav__router"><i class="fas fa-user-alt"></i> Characters</a></li>
+                        <li class="menu-nav__list"><a routerLink="/houses" routerLinkActive="active"
+                                    class="menu-nav__router"><i class="fab fa-fort-awesome"></i> Houses</a>
+                        </li>
+                        <li class="menu-nav__list"><a routerLink="/timeline" routerLinkActive="active"
+                                    class="menu-nav__router"><i class="fas fa-birthday-cake"></i> Timeline</a>
+                        </li>
+                  </ul>
+            </div>
+      </nav>
+</header>

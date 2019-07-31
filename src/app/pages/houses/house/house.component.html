@@ -1,0 +1,23 @@
+<app-header></app-header>
+<app-menu></app-menu>
+<div class="house">
+  <div class="house-back">
+    <button class="house-back__button" (click)=backClicked()>Volver</button>
+  </div>
+
+  <div class="house-detail" *ngIf="houseDetail">
+
+    <div class="house-detail__image">
+      <img src="{{houseDetail.logoURL}}" alt="" class="house-detail__img">
+    </div>
+
+    <div class="house-detail__content">
+      <h2 class="name">{{houseDetail.name}}</h2>
+      <p class="content"><span class="color">Lema: </span>{{houseDetail.words}}</p>
+      <p class="content"><span class="color">Sede: </span>{{houseDetail.seat}}</p>
+      <p class="content"><span class="color">Región: </span>{{houseDetail.region}}</p>
+      <app-tabs [title]="'Alianzas'" [content]="houseDetail.allegiance"></app-tabs>
+      <app-tabs [title]="'Religiones'" [content]="houseDetail.religion"></app-tabs>
+    </div>
+  </div>
+</div>

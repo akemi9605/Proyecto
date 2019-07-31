@@ -1,0 +1,26 @@
+<app-header></app-header>
+<app-menu></app-menu>
+<div class="wrap">
+  <div class="search">
+    <input type="text" class="searchTerm" placeholder="Look for your person..." [(ngModel)]="filterPost">
+    <button type="submit" class="searchButton">
+      <i class="fa fa-search"></i>
+    </button>
+  </div>
+</div>
+<div class="container">
+  <a [routerLink]="['/house', house.name]" *ngFor="let house of houses | filter:filterPost" class="container-house">
+    <div class="container-house__image" [style.background]="house.color">
+      <img src="{{house.logoURL}}" class="container-house__img">
+      <p class="container-house__list">
+        <a routerLink="/">{{house.father}}</a>
+      </p>
+      <p class="container-house__list">
+        <a routerLink="/">{{house.house}}</a>
+      </p>
+      <h2 class="container-house__title"><a [routerLink]="['/house', house.name]"
+          class="container-house__router">{{house.name}}</a></h2>
+    </div>
+
+  </a>
+</div>

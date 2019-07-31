@@ -1,0 +1,30 @@
+@media (min-width: 1025px) {
+  .header__title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header__logo {
+    width: 30%;
+    margin: auto;
+    text-align: center;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 1025px) {
+  .header__logo {
+    padding-left: 77px;
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .header__logo {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding: 15px;
+  }
+}
+/*# sourceMappingURL=header.component.css.map */

@@ -1,0 +1,96 @@
+@media (min-width: 1025px) {
+  .house-detail {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 20px;
+    border: 1px solid #795548;
+    border-radius: 10px;
+    background: url(https://image.freepik.com/foto-gratis/textura-papel-marron-fondo_1373-528.jpg);
+    width: 800px;
+    margin: 0 auto;
+    background-position: center;
+    background-size: cover;
+  }
+  .house-detail__content {
+    padding-left: 50px;
+  }
+  .house-back__button {
+    font-size: 15px;
+    background: #00B4CC;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    color: #fff;
+    font-family: "KELMSCOT";
+    margin-left: 300px;
+  }
+  .house {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 1025px) {
+  .house-detail {
+    margin-left: 18px;
+    margin-top: 15px;
+    display: block;
+    padding: 20px;
+    border: 1px solid #795548;
+    border-radius: 10px;
+    background: url(https://image.freepik.com/foto-gratis/textura-papel-marron-fondo_1373-528.jpg);
+    width: 490px;
+    background-position: center;
+    background-size: cover;
+  }
+  .house-detail__image {
+    margin-left: 70px;
+  }
+  .name {
+    font-size: 35px;
+  }
+  .content {
+    font-size: 25px;
+  }
+  .house-back__button {
+    font-size: 25px;
+    background: #00B4CC;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    color: #fff;
+    font-family: "KELMSCOT";
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .house-detail {
+    display: block;
+    padding: 20px;
+    border: 1px solid #795548;
+    border-radius: 10px;
+    background: url(https://image.freepik.com/foto-gratis/textura-papel-marron-fondo_1373-528.jpg);
+    width: 246px;
+    margin: 0 auto;
+    background-position: center;
+    background-size: cover;
+  }
+  .house-detail__img {
+    width: 100%;
+  }
+  .house-detail__content {
+    padding-left: 9px;
+  }
+  .house-back__button {
+    background: none;
+    border: none;
+    padding-left: 134px;
+    padding-bottom: 17px;
+  }
+  .house {
+    padding: 30px;
+  }
+}
+/*# sourceMappingURL=house.component.css.map */

@@ -1,0 +1,31 @@
+<app-header></app-header>
+<app-menu></app-menu>
+<div class="wrap">
+  <div class="search">
+    <input type="text" class="searchTerm" placeholder="Look for your person..." [(ngModel)]="filterPost">
+    <button type="submit" class="searchButton">
+      <i class="fa fa-search"></i>
+    </button>
+  </div>
+</div>
+<div class="container">
+  <div class="container-character" *ngFor="let character of characters | filter:filterPost">
+    <div class="container-character__imgsmallbox">
+      <img src="https://www.zonanegativa.com/imagenes/2014/07/juego_de_tronos_hbo_destacado.jpg"
+        class="container-character__imgsmall">
+      <h2 class="container-character__titlelist"><a [routerLink]="['/character', character.name]"
+          class="container-character__link">
+          {{character.name}}</a></h2>
+    </div>
+    <div class="container-character__img" [style.backgroundImage]="'url('+ character.image +')'"></div>
+    <div class="container-character__ul">
+
+      <p class="container-character__list"><span class="container-character__title">Casa: </span>
+        <a [routerLink]="['/house', character.house]" class="container-character__router">{{character.house}}</a>
+      </p>
+      <p class="container-character__list"><span class="container-character__title">Padre: </span>
+        <a [routerLink]="['/character', character.father]" class="container-character__router">{{character.father}}</a>
+      </p>
+    </div>
+  </div>
+</div>

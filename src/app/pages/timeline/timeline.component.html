@@ -1,0 +1,17 @@
+<app-header></app-header>
+<app-menu></app-menu>
+<button (click)="changeOrder()" class="button">Change Order</button>
+<div class="timeline" *ngFor="let characterage of characters">
+  <div class="timeline-container">
+    <div class="timeline-container__content" [routerLink]="['/character', characterage.name]">
+      <div class="text">
+        <div class="prueba">
+          <img class="container-character__img" src={{characterage.image}}>
+        </div>
+        <span id="text"><i class="fas fa-caret-left"></i></span>
+        <p class="name">{{characterage.age.name}}</p>
+        <p class="cont">{{characterage.age.age}}</p>
+      </div>
+    </div>
+  </div>
+</div>

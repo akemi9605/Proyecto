@@ -1,0 +1,27 @@
+<app-header></app-header>
+<app-menu></app-menu>
+<div class="character">
+  <div class="character-back">
+    <button class="character-back__button" (click)=backClicked()>Volver</button>
+  </div>
+
+  <div class="character-detail" *ngIf="characterDetail">
+
+    <div class="character-detail__image">
+      <img src="{{characterDetail.image}}" alt="" class="character-detail__img">
+    </div>
+
+    <div class="character-detail__content">
+      <h2 class="character-detail__h2">{{characterDetail.name}}</h2>
+      <h4 class="character-detail__h4"><span class="character-detail__span">Padre: </span><a
+          [routerLink]="['/character', characterDetail.father]" class="content__link">{{characterDetail.father}}</a>
+      </h4>
+      <h4 class="character-detail__h4"><span class="character-detail__span">Casa: </span><a
+          [routerLink]="['/house', characterDetail.house]" class="content__link">{{characterDetail.house}}</a></h4>
+      <app-tabs [title]="'Alianzas'" [content]="characterDetail.allegiances"></app-tabs>
+      <app-tabs [title]="'Apariciones'" [content]="characterDetail.appearances"></app-tabs>
+      <app-tabs [title]="'Descendientes'" [content]="characterDetail.siblings"></app-tabs>
+      <app-tabs [title]="'Títulos'" [content]="characterDetail.titles"></app-tabs>
+    </div>
+  </div>
+</div>

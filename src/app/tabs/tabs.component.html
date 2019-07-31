@@ -1,0 +1,9 @@
+<div class="tab">
+  <p class="tab__title" (click)="open()">{{title}}</p>
+  <span class="tab__icon"><i class="fas fa-chevron-down"></i></span>
+  <div class="tab__body" [ngClass]="{'tab__body--opened': opened == true}">
+    <ul class="tab__ul">
+      <li *ngFor="let element of content" class="tab__list">{{element}}</li>
+    </ul>
+  </div>
+</div>
